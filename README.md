@@ -1,3 +1,7 @@
+[![Nuget](https://img.shields.io/nuget/v/DmitryLegostaev.Polly.HandleFromList.svg)](https://www.nuget.org/packages/DmitryLegostaev.Polly.HandleFromList)
+[![Build](https://github.com/DmitryLegostaev/DmitryLegostaev.Polly.HandleFromList/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/DmitryLegostaev/DmitryLegostaev.Polly.HandleFromList/actions/workflows/build.yml)
+![GitHub repo size](https://img.shields.io/github/repo-size/DmitryLegostaev/DmitryLegostaev.Polly.HandleFromList)
+
 ## DmitryLegostaev.Polly.HandleFromList
 
 A small class library to expand Polly PolicyBuilder with handling exceptions list functionality.
