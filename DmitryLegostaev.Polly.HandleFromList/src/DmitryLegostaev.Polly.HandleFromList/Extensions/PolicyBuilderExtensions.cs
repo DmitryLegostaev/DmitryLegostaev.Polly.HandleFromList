@@ -24,4 +24,16 @@ public static class PolicyBuilderExtensions
 
         return policyBuilder;
     }
+
+    public static PolicyBuilder OrFromList(this PolicyBuilder policyBuilder,
+        IList<Type>? exceptionsToHandle, bool strictCheck = false)
+    {
+        if (ExceptionsListValidator.IsExceptionListValid(exceptionsToHandle, strictCheck))
+        {
+            policyBuilder
+                .Or<Exception>(exception => exceptionsToHandle!.Any(type => type.IsInstanceOfType(exception)));
+        }
+
+        return policyBuilder;
+    }
 }
