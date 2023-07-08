@@ -18,4 +18,10 @@ public static class PolicyBuilderUtilities
         return Policy<T>
             .Handle<Exception>(exception => exceptionsToHandle!.Any(type => type.IsInstanceOfType(exception)));
     }
+
+    public static PolicyBuilder HandleFromList(IList<Type>? exceptionsToHandle, bool strictCheck = true)
+    {
+        ExceptionsListValidator.IsExceptionListValid(exceptionsToHandle, strictCheck);
+        return Policy.Handle<Exception>(exception => exceptionsToHandle!.Any(type => type.IsInstanceOfType(exception)));
+    }
 }
