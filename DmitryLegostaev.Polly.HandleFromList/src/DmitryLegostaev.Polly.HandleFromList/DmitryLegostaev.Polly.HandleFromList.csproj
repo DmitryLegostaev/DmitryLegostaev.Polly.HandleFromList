@@ -9,16 +9,17 @@
     <Authors>Dmitry Legostaev</Authors>
     <Description>A small class library to expand Polly PolicyBuilder with handling exceptions list functionality.</Description>
     <Copyright>Copyright (c) $(Authors)</Copyright>
-    <Version>1.0.0</Version>
+    <Version>2.0.0</Version>
     <PackageProjectUrl>https://github.com/DmitryLegostaev/DmitryLegostaev.Polly.HandleFromList</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DmitryLegostaev/DmitryLegostaev.Polly.HandleFromList</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIcon>package-icon.png</PackageIcon>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageTags>Polly, Exceptions, Handling</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RootNamespace>DmitryLegostaev.Polly.HandleFromList</RootNamespace>
+    <Configuration>Release</Configuration>
   </PropertyGroup>
 
   <ItemGroup>
